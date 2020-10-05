@@ -15,7 +15,6 @@ def search_amazon(item):
     driver.get('https://www.amazon.com')
     search_box = driver.find_element_by_id('twotabsearchtextbox').send_keys(item)
     search_button = driver.find_element_by_id("nav-search-submit-text").click()
-    #listing = driver.find_elements_by_xpath('//div[@class="sg-col-20-of-24 s-result-item s-asin sg-col-0-of-12 sg-col-28-of-32 sg-col-16-of-20 sg-col sg-col-32-of-36 sg-col-12-of-16 sg-col-24-of-28"]')
 
     driver.implicitly_wait(5)
 
