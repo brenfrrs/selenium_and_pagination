@@ -71,7 +71,7 @@ def scrape(url):
     # Pass the HTML of the page and create
     return e.extract(r.text)
 
-search_amazon('hats') # <------ search query goes here.
+search_amazon('monitor') # <------ search query goes here.
 
 # Create an Extractor by reading from the YAML file
 e = Extractor.from_yaml_file('search_results.yml')
@@ -87,3 +87,4 @@ with open("search_results_urls.txt",'r') as urllist, open('search_results_output
                 json.dump(product,outfile)
                 outfile.write("\n")
                 # sleep(5)
+print("---DONE---")
