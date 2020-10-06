@@ -41,7 +41,7 @@ def search_amazon(item):
         for result_page in url_list:
             filehandle.write('%s\n' % result_page)
 
-    print("---DONE---")
+    print("---DONE GRABBING LINKS---")
 
 def scrape(url):
 
@@ -71,7 +71,7 @@ def scrape(url):
     # Pass the HTML of the page and create
     return e.extract(r.text)
 
-search_amazon('Macbook Pro') # <------ search query goes here.
+search_amazon('hats') # <------ search query goes here.
 
 # Create an Extractor by reading from the YAML file
 e = Extractor.from_yaml_file('search_results.yml')
@@ -83,7 +83,7 @@ with open("search_results_urls.txt",'r') as urllist, open('search_results_output
         if data:
             for product in data['products']:
                 product['search_url'] = url
-                print("Saving Product: %s"%product['title'])
+                print("Saving Product: %s"%product['title'].encode('utf8'))
                 json.dump(product,outfile)
                 outfile.write("\n")
                 # sleep(5)
