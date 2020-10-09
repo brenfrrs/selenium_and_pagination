@@ -1,6 +1,6 @@
 # Amazon Web Scraper
 
-The article describing the code for this repo can be found [here](https://medium.com/@brendanfrrs/scraping-amazon-results-with-selenium-and-python-547fc6be8bfa "Medium.com article.")
+The article describing the code for this repo can be found [here](https://medium.com/@brendanfrrs/scraping-amazon-results-with-selenium-and-python-547fc6be8bfa "Medium.com article.").
 
 ## Requirements:
 To run this program you will need the following installed on your computer or virtual machine:
@@ -13,4 +13,3 @@ You will also need the following files in the project directory:
 
 1. *search_results_urls.txt*
 2. *search_results_output.jsonl*
-
