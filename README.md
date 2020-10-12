@@ -19,4 +19,4 @@ You will also need the following folder in the project directory:
 
 1. *results*
 
-This folder will house all of the search result json files. The file names will be in the following format: query_date_results.jsonl
+This folder will house all of the search resulting json files. The file names will be in the following format: query_date_results.jsonl
