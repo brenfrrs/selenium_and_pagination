@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 # scrape() function courtesy of https://github.com/scrapehero-code/amazon-scraper
 
 from selenium import webdriver
@@ -6,8 +7,8 @@ from selenium.common.exceptions import NoSuchElementException
 from selectorlib import Extractor
 import requests
 import json
-import time
 
+search_query = input('Enter an item: ')
 
 def search_amazon(item):
 
@@ -71,7 +72,8 @@ def scrape(url):
     # Pass the HTML of the page and create
     return e.extract(r.text)
 
-search_amazon('monitor') # <------ search query goes here.
+
+search_amazon(search_query) # <------ search query goes here.
 
 # Create an Extractor by reading from the YAML file
 e = Extractor.from_yaml_file('search_results.yml')
