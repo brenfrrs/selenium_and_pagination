@@ -104,3 +104,4 @@ with open("search_results_urls.txt",'r') as urllist, open('{}_{}_results.jsonl'.
 new_path = shutil.move('{}_{}_results.jsonl'.format(search_query, date), destination)
 
 print("---DONE---")
+print('\n')
