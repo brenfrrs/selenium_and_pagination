@@ -1,5 +1,7 @@
 # Amazon Web Scraper
 
+![Screenshot](/images/program_screenshot.png)
+
 The article describing the code for this repo can be found [here](https://medium.com/@brendanfrrs/scraping-amazon-results-with-selenium-and-python-547fc6be8bfa "Medium.com article.").
 
 ## Requirements:
