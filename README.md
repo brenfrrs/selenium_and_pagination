@@ -9,7 +9,12 @@ To run this program you will need the following installed on your computer or vi
 2. [webdriver-manager](https://pypi.org/project/webdriver-manager/)
 3. [selectorlib](https://pypi.org/project/selectorlib/)
 
-You will also need the following files in the project directory:
+You will also need the following file in the project directory:
 
 1. *search_results_urls.txt*
-2. *search_results_output.jsonl*
+
+You will also need the following folder in the project directory:
+
+1. *results*
+
+This folder will house all of the search result json files. The file names will be in the following format: <query>_<date>_results.jsonl
