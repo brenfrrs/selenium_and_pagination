@@ -5,8 +5,13 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import NoSuchElementException
 from selectorlib import Extractor
+import os
 import requests
 import json
+
+os.system("cat banner.txt")
+
+print('\n')
 
 search_query = input('Enter an item: ')
 
