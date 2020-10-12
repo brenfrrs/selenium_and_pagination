@@ -6,11 +6,14 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import NoSuchElementException
 from selectorlib import Extractor
 import os
+from datetime import date
+import shutil
 import requests
 import json
 
 os.system("cat banner.txt")
-
+today = date.today() #get todays date for the output file
+date = today.strftime("%b-%d-%Y")
 print('\n')
 
 search_query = input('Enter an item: ')
@@ -84,7 +87,10 @@ search_amazon(search_query) # <------ search query goes here.
 e = Extractor.from_yaml_file('search_results.yml')
 
 # product_data = []
-with open("search_results_urls.txt",'r') as urllist, open('search_results_output.jsonl','w') as outfile:
+output_file = open('{}_{}_results.jsonl'.format(search_query,date), "w+")
+destination = 'results'
+
+with open("search_results_urls.txt",'r') as urllist, open('{}_{}_results.jsonl'.format(search_query,date),'w') as outfile:
     for url in urllist.read().splitlines():
         data = scrape(url)
         if data:
@@ -94,4 +100,7 @@ with open("search_results_urls.txt",'r') as urllist, open('search_results_output
                 json.dump(product,outfile)
                 outfile.write("\n")
                 # sleep(5)
+
+new_path = shutil.move('{}_{}_results.jsonl'.format(search_query, date), destination)
+
 print("---DONE---")
