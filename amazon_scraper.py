@@ -1,4 +1,5 @@
-#!/usr/local/bin/python3
+#!/usr/bin/env python3
+
 # scrape() function courtesy of https://github.com/scrapehero-code/amazon-scraper
 
 from selenium import webdriver
