@@ -12,6 +12,7 @@ import shutil
 import requests
 import json
 
+#hey
 os.system("cat banner.txt")
 today = date.today() #get todays date for the output file
 date = today.strftime("%b-%d-%Y")
