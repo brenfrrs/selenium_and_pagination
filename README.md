@@ -1,6 +1,6 @@
 # Amazon Web Scraper
 
-![Screenshot](/images/program_screenshot.png)
+![Screenshot](./images/program_screenshot.png)
 
 The article describing the code for this repo can be found [here](https://medium.com/@brendanfrrs/scraping-amazon-results-with-selenium-and-python-547fc6be8bfa "Medium.com article.").
 
@@ -20,3 +20,6 @@ You will also need the following folder in the project directory:
 1. *results*
 
 This folder will house all of the search resulting json files. The file names will be in the following format: query_date_results.jsonl
+
+**Example Output**
+![output](./images/amazon_output.png)
