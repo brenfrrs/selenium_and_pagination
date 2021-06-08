@@ -23,3 +23,29 @@ This folder will house all of the search resulting json files. The file names wi
 
 **Example Output**
 ![output](./images/amazon_output.png)
+
+#### Repository Structure
+<pre>
+├── LICENSE
+├── Mod2\ Study\ Notebook.ipynb
+├── README.md
+├── amazon-scraper
+├── amazon_scraper.ipynb
+├── amazon_scraper.py
+├── banner.txt
+├── images
+│   ├── amazon_output.png
+│   └── program_screenshot.png
+├── linkedin_final_script.py
+├── results
+│   ├── Iphone_Oct-13-2020_results.jsonl
+│   ├── Macbook\ Pro_Oct-12-2020_results.jsonl
+│   ├── Xbox\ one_Oct-12-2020_results.jsonl
+│   ├── statistics_Oct-12-2020_results.jsonl
+│   ├── tent_Oct-12-2020_results.jsonl
+│   ├── xbox_Oct-12-2020_results.jsonl
+│   └── xbox_results.jsonl
+├── search_results.yml
+├── search_results_urls\ copy.txt
+├── search_results_urls.txt
+├── search_urls.txt </pre>
